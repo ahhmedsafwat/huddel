@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@media (max-width: 1440px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  background: url(../image/bg-desktop.svg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(257, 40%, 49%);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  flex-basis: 50%;
+  margin: 50px 0 0 35px;
+}
+header .logo {
+  width: 200px;
+}
+header .main-image {
+  margin-top: 60px;
+}
+
+.main {
+  flex-basis: 34%;
+  color: white;
+  display: flex;
+  margin-top: auto;
+}
+.text h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.text p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+.text span {
+  display: block;
+  width: 150px;
+  text-align: center;
+  background: hsl(300, 69%, 71%);
+  padding: 15px;
+  text-transform: capitalize;
+  border-radius: 30px;
+}
+.text span:hover {
+  cursor: pointer;
+  color: hsl(300, 69%, 71%);
+  background: white;
+  box-shadow: 0px 2px 6px -2px black;
+}
+.icons {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  height: 140px;
+}
+.icons a {
+  text-decoration: none;
+  display: block;
+  align-self: flex-end;
+}
+
+.icons i {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  color: white;
+}
+
+.icons i:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+.challenge {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #e1e8ee;
+  text-transform: capitalize;
+}
+.challenge a {
+  text-decoration: none;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 350px;
+    flex-direction: column;
+  }
+  .header {
+    background: url(../image/bg-mobile.svg) no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+  .main-image {
+    width: 320px;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+  }
+  .main {
+    margin-top: 20px;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .icons {
+    justify-content: center;
+    height: 80px;
+    margin: auto;
+  }
+  .icons a i {
+    margin-left: 0;
+  }
+  .icons a i:not(.fa-facebook-f) {
+    margin-left: 15px;
+  }
+  .text h1 {
+    font-size: 1.9rem;
+  }
+  .text p {
+    font-size: 15px;
+    padding: 0px 35px;
+  }
+  .challenge {
+    top: 98%;
+    font-size: 12px;
+    width: 330px;
+  }
+}
